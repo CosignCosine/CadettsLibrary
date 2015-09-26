@@ -5,3 +5,6 @@ var glow = function(whattoglow, color){
 }
 
 //What to add?
+var createAnimation = function(){
+    var args = arguments;
+}
