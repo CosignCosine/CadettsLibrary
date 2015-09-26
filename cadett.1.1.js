@@ -3,3 +3,5 @@ var glow = function(whattoglow, color){
     oofoofoofoof.style.color = color;
     oofoofoofoof.style.textShadow = "0px 0px 15px " + color + ", 0px 0px 15px " + color + ", 0px 0px 15px " + color + ", 0px 0px 15px " + color + ", 0px 0px 15px " + color + ", 0px 0px 15px " + color + ", 0px 0px 15px " + color;
 }
+
+//What to add?
