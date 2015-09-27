@@ -7,4 +7,10 @@ var glow = function(whattoglow, color){
 //What to add?
 var createAnimation = function(){
     var args = arguments;
+var l = args.length;
+var giveback = "";
+//wip keyframes, any advice?
+    for(var i = 0; i < l; i++){
+        giveback += i.percentage + "%{";
+    }
 }
