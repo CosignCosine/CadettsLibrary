@@ -5,6 +5,7 @@ var glow = function(whattoglow, color){
 }
 
 //What to add?
+/** HEY ALL! WE CAN USE π AS A FUNCTION! DO YOU KNOW WHAT THIS MEANS? */
 var createAnimation = function(){
     var args = arguments;
 var l = args.length;
