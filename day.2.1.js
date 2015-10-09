@@ -20,3 +20,8 @@ var monthNames = ["January", "February", "March", "April", "May", "June", "July"
 π.minutes = checkTime(q.getMinutes());
 π.seconds = checkTime(q.getSeconds());
 π.M = ((q.getHours() < 12) ? "AM" : "PM");
+π.update = function(){
+    π.hour = (q.getHours())%12;
+    π.minutes = checkTime(q.getMinutes());
+    π.seconds = checkTime(q.getSeconds());
+};
