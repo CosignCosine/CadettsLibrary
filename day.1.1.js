@@ -1,12 +1,15 @@
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
 var q = new Date();
 var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var π = {};
-π.dotw = dayNames[q.getUTCDay()];
-π.day = q.getUTCDate();
-π.month = monthNames[q.getUTCMonth()];
-π.year = q.getUTCFullYear();
-π.hour = ((q.getUTCHour() - Math.round(q.getTimezoneOffset()/60))%12)
-π.minutes = q.getUTCMinutes();
-π.seconds = q.getUTCSeconds();
-π.M = (q.getUTCHour() < 12) ? "AM" : "PM";
+var dotw = dayNames[q.getDay()];
+var day = q.getDate();
+var month = monthNames[q.getMonth()];
+var year = q.getFullYear();
+var hour = q.getHours();
+var minutes = checkTime(q.getMinutes());
