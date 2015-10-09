@@ -1,0 +1,12 @@
+var q = new Date();
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var π = {};
+π.week = dayNames[q.getUTCDay()];
+π.day = q.getUTCDate();
+π.month = monthNames[q.getUTCMonth()];
+π.year = q.getUTCFullYear();
+π.hour = ((q.getUTCHour() - Math.round(q.getTimezoneOffset()/60))%12)
+π.minutes = q.getUTCMinutes();
+π.seconds = q.getUTCSeconds();
+π.M = (q.getUTCHour() < 12) ? "AM" : "PM";
