@@ -16,7 +16,7 @@ body{
     background: rgb(255, 255, 0);
     font-family: Nunito;
 }
-code{
+.code{
     background: gray;
     border-radius: 0.5em;
     color: black;
