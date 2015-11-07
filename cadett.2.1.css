@@ -18,7 +18,7 @@ body{
 }
 code{
     background: gray;
-    border-radius: 2em;
-    color: blue;
+    border-radius: 0.5em;
+    color: black;
     font-family: "Ubuntu Mono";
 }
