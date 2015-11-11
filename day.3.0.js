@@ -1,6 +1,7 @@
 /** 
- * Thanks to KCF for fixing some major bugs.
- * Website: www.kingcodefish.com
+ * @Authors: Blaze, KCF
+ * 
+ * @Websites: www.kingcodefish.com
  */
 var checkTime = function(i) {
     if (i < 10) {
@@ -25,3 +26,4 @@ var monthNames = ["January", "February", "March", "April", "May", "June", "July"
     π.minutes = checkTime(q.getMinutes());
     π.seconds = checkTime(q.getSeconds());
 };
+π.update();
