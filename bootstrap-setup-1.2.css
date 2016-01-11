@@ -4,3 +4,6 @@ body{
 button{
   transition: all 1s;
 }
+input:focus, textarea:focus {
+  outline:none;
+}
