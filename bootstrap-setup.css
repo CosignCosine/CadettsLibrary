@@ -1,3 +1,6 @@
 body{
   padding: 1em;
 }
+button{
+  transition: all 1s;
+}
