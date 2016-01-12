@@ -11,50 +11,53 @@ var randomComment = function() {
     var thirdSeg = "";
     var fourthSeg = "";
     var fifthSeg = "";
-
-    if (first <= 6) {
-        firstSeg = "I";
-    }
-    if (first > 6 && first < 9) {
-        firstSeg = "";
-    }
-    if (first >= 9 && first <= 10) {
-        firstSeg = "You";
-    }
-    if (first > 10 && first < 14) {
-        firstSeg = "Why";
-    }
-    if (first === 14) {
-        firstSeg = "Could";
-    }
-    if (firstSeg === "Why") {
-        if (second === 0) {
-            secondSeg = "did you";
-        }
-        if (second === 1) {
-            secondSeg = "would you";
-        }
-        if (second === 2) {
-            secondSeg = "is this so popular?";
-        }
-        if (second === 3) {
-            secondSeg = "did you not add the win screen?";
-        }
-        if (second === 4) {
-            secondSeg = "is this wierd?";
-        }
-        if (second === 5) {
-            secondSeg = "do you ask that?";
-        }
-        if (second === 6) {
-            secondSeg = "are you two friends?";
-        }
-        if (second === 7) {
-            secondSeg = "would you not make one?";
-        }
-        if (second === 8) {
-            secondSeg = "is Brian Duckworth gone?";
-        }
+    
+    switch(true) {
+        case first <= 6:
+            firstSeg = "I";
+            break;
+        case first > 6 && first < 9:
+            firstSeg = "";
+            break;
+        case first >= 9 && first <= 10:
+            firstSeg = "You";
+            break;
+        case first > 10 && first < 14:
+            firstSeg = "Why";
+            break;
+        case first === 14:
+            firstSeg = "Could";
+            break;
+        case firstSeg === "Why":
+            switch(second) {
+                case 0:
+                    secondSeg = "did you";
+                    break;
+                case 1:
+                    secondSeg = "would you";
+                    break;
+                case 2:
+                    secondSeg = "is this so popular?";
+                    break;
+                case 3:
+                    secondSeg = "did you not add the win screen?";
+                    break;
+                case 4:
+                    secondSeg = "is this wierd?";
+                    break;
+                case 5:
+                    secondSeg = "do you ask that?";
+                    break;
+                case 6:
+                    secondSeg = "are you two friends?";
+                    break;
+                case 7:
+                    secondSeg = "would you not make one?";
+                    break;
+                case 8:
+                    secondSeg = "is Brian Duckworth gone?";
+                    break;
+            }
         if (secondSeg === "did you" && third === 0) {
             thirdSeg = "delete this?";
         }
