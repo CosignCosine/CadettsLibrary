@@ -58,54 +58,56 @@ var randomComment = function() {
                     secondSeg = "is Brian Duckworth gone?";
                     break;
             }
-        if (secondSeg === "did you" && third === 0) {
-            thirdSeg = "delete this?";
-        }
-        if (secondSeg === "did you" && third === 1) {
-            thirdSeg = "listen to him?";
-        }
-        if (secondSeg === "did you" && third === 2) {
-            thirdSeg = "make this?";
-        }
-        if (secondSeg === "would you" && third === 0) {
-            thirdSeg = "delete this?";
-        }
-        if (secondSeg === "would you" && third === 1) {
-            thirdSeg = "listen to him?";
-        }
-        if (secondSeg === "would you" && third === 2) {
-            thirdSeg = "make this?";
-        }
-    }
-    if (firstSeg === "Could") {
-        if (second === 0) {
-            secondSeg = "I use this code?";
-        }
-        if (second === 1) {
-            secondSeg = "I help you finish it?";
-        }
-        if (second === 2) {
-            secondSeg = "I use this program in my blog?";
-        }
-        if (second === 3) {
-            secondSeg = "we team up?";
-        }
-        if (second === 4) {
-            secondSeg = "you stop making these?";
-        }
-        if (second === 5) {
-            secondSeg = "he and I help you?";
-        }
-        if (second === 6) {
-            secondSeg = "I flag this for soliciting votes?";
-        }
-        if (second === 7) {
-            secondSeg = "you make another?";
-        }
-        if (second === 8) {
-            secondSeg = "you give me the code for the menu?";
-        }
-    }
+            switch(true) {
+                case secondSeg === "did you" && third === 0):
+                    thirdSeg = "delete this?";
+                    break;
+                case secondSeg === "did you" && third === 1:
+                    thirdSeg = "listen to him?";
+                    break;
+                case secondSeg === "did you" && third === 2:
+                    thirdSeg = "make this?";
+                    break;
+                case secondSeg === "would you" && third === 0:
+                    thirdSeg = "delete this?";
+                    break;
+                case secondSeg === "would you" && third === 1:
+                    thirdSeg = "listen to him?";
+                    break;
+                case secondSeg === "would you" && third === 2:
+                    thirdSeg = "make this?";
+                    break;
+            }
+        case firstSeg === "Could":
+            switch(second) {
+                case 0:
+                    secondSeg = "I use this code?";
+                    break;
+                case 1:
+                    secondSeg = "I help you finish it?";
+                    break;
+                case 2:
+                    secondSeg = "I use this program in my blog?";
+                    break;
+                case 3:
+                    secondSeg = "we team up?";
+                    break;
+                case 4:
+                    secondSeg = "you stop making these?";
+                    break;
+                case 5:
+                    secondSeg = "he and I help you?";
+                    break;
+                case 6:
+                    secondSeg = "I flag this for soliciting votes?";
+                    break;
+                case 7:
+                    secondSeg = "you make another?";
+                    break;
+                case 8:
+                    secondSeg = "you give me the code for the menu?";
+                    break;
+            }
     if (firstSeg === "You") {
         if (second === 0) {
             secondSeg = "are good";
